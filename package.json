@@ -1,0 +1,19 @@
+{
+    "name"         : "node-red-contrib-pdf2json",
+    "version"      : "0.0.1",
+    "description"  : "Node-RED nodes for converting a Pdf to json",
+    "dependencies" : {
+        "pdf2json": "^1.1.8"
+    },
+    "license"  : "Apache",
+    "keywords" : [ "node-red", "pdf", "pdf2json" ],
+    "node-red" : {
+        "nodes" : {
+            "pdf2json" : "pdf2json.js"
+        }
+    },
+    "author" : {
+        "name" : "Calogero Crapanzano",
+        "email": "calosan@gmail.com"
+    }
+}
