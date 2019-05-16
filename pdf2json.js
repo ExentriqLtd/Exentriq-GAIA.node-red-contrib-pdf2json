@@ -9,7 +9,7 @@ module.exports = function(RED) {
                 PDFParser = require("pdf2json");
                 let pdfParser = new PDFParser();
 
-                pdfParser.on("pdfParser_dataError", errData => node.error(errData.parserError) );
+                pdfParser.on("pdfParser_dataError", errData => node.error(errData.parserError, msg) );
                 pdfParser.on("pdfParser_dataReady", pdfData => {
                   msg.payload = pdfData;
                   node.send(msg);
@@ -18,7 +18,7 @@ module.exports = function(RED) {
             });
         }
         catch(e) {
-            node.error(e);
+            node.error(e, msg); 
         }
     }
 

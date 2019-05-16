@@ -1,2 +1,2 @@
 # Pdf2Json Node
-Kafka node can convert a PDF to JSON
+Pdf2Json node can convert a PDF to JSON
